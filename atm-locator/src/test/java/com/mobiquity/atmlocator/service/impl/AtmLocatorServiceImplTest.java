@@ -37,12 +37,7 @@ public class AtmLocatorServiceImplTest {
 	private String mockCorrectCity = "Maasbracht";
 
 	@Autowired
-	@InjectMocks
 	private AtmLocatorService atmLocatorService;
-
-	private File atmTestData;
-
-	private List<AtmLocatorDTO> atms;
 
 	@Test
 	public void shouldGetAtmByCityName() {
@@ -58,12 +53,7 @@ public class AtmLocatorServiceImplTest {
 
 	@AfterEach
 	public void cleanTestData() {
-		if (atms != null && atms.size() != 0) {
-			atms.clear();
-		}
-		if (atmTestData != null) {
-			atmTestData = null;
-		}
+		//To-do
 	}
 
 }
