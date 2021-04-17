@@ -19,14 +19,7 @@ public class AtmLocatorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AtmLocatorApplication.class, args);
 	}
-
-	@Bean
-	public WebClient loadLocalWebClient() {
-		return WebClient.builder()
-				.exchangeStrategies(ExchangeStrategies.builder()
-						.codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(16 * 1024 * 1024)).build())
-				.build();
-	}
+	
 
 	@Bean
 	public RestTemplate getRestTemplate() {

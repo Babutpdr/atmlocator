@@ -1,7 +1,7 @@
 package com.mobiquity.atmlocator.components;
 
+import java.util.Arrays;
 import java.util.List;
-
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -37,7 +37,7 @@ public class ATMLocatorComponent {
 		String modifiedResponseStr = response.substring(6, response.length());
 		ObjectMapper objectMapper = new ObjectMapper();
 		AtmLocatorDTO[] atmDto = objectMapper.readValue(modifiedResponseStr, AtmLocatorDTO[].class);
-		return List.of(atmDto);
+		return Arrays.asList(atmDto);
 	}
 
 }
