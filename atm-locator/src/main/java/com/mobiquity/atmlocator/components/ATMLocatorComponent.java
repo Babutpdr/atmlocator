@@ -33,7 +33,7 @@ public class ATMLocatorComponent {
 	public List<AtmLocatorDTO> loadATMFromURI() throws JsonMappingException, JsonProcessingException {
 		String response = restTemplate.getForObject("https://www.ing.nl/api/locator/atms/", String.class);
 		
-		//FIX-ME,currently response coming incorrectly,due to that first removing 6 characters
+		//FIX-ME,currently response coming incorrectly,due to that removing first 5 characters
 		String modifiedResponseStr = response.substring(6, response.length());
 		ObjectMapper objectMapper = new ObjectMapper();
 		AtmLocatorDTO[] atmDto = objectMapper.readValue(modifiedResponseStr, AtmLocatorDTO[].class);
