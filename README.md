@@ -4,13 +4,13 @@ This is sample microservice to get list of ATM's in Netherlands and also can fin
 - First we need to clone this repositoy to in our local
 Refer this document how to clone a git repo in our local https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository.
 ## Prerequisite softwares
-  - JDK 8 need to be installed in your system,your can refer here how to install JDK https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jdk_install.html
+  - JDK 8 need to be installed in your system,you can refer here how to install JDK https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jdk_install.html
   - We need to install maven version 3.8.1 or higher, you can refer here how to install maven https://maven.apache.org/install.html
 
 - Navigate the folder where you cloned the project and you should be in root folder </br>example: <b> D:\workspace\GitHub\atmlocator</b>
 - Open the command prompt, navigate to application directory using cd command </br>example: <b> cd D:\workspace\GitHub\atmlocator </b>
-- Now build the application using maven example: mvn clean install ,this command will execute the junit test as well if you want to skip you can run this command(not recommended)
-mvn clean install -DskipTests
+- Now build the application using maven <b> mvn clean install <b>,this command will execute the junit test as well if you want to skip you can run this command(not recommended)
+  <b>mvn clean install -DskipTests</b>
 - Now you can the the spring boot application using below command </br>
         <b> mvn spring-boot:run </b>
 # Steps to executes the endpoints using postman
