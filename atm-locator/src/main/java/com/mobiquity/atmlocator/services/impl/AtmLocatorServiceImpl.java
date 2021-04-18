@@ -15,7 +15,7 @@ import com.mobiquity.atmlocator.dto.AtmLocatorDTO;
 import com.mobiquity.atmlocator.services.AtmLocatorService;
 
 /**
- * Service class for Atm locator
+ * Implementation class for service methods of atm locator
  * @author tbabu
  *
  */

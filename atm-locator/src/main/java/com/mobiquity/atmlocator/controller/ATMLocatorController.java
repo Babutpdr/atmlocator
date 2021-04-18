@@ -15,7 +15,11 @@ import com.mobiquity.atmlocator.dto.AtmLocatorDTO;
 import com.mobiquity.atmlocator.dto.AtmResponseWarraper;
 import com.mobiquity.atmlocator.services.AtmLocatorService;
 
-
+/**
+ * This class is to expose endpoints outside
+ * @author tbabu
+ *
+ */
 @RestController
 @RequestMapping("api/v1/atmlocator")
 public class ATMLocatorController {

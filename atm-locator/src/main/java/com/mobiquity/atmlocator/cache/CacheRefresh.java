@@ -6,7 +6,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 /**
- * Utility class to refresh caches.
+ * Utility class to refresh caches every 6 minutes.
  * @author tbabu
  *
  */
