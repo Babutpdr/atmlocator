@@ -9,7 +9,7 @@ Refer this document how to clone a git repo in our local https://docs.github.com
 
 - Navigate the folder where you cloned the project and you should be in root folder </br>example: <b> D:\workspace\GitHub\atmlocator</b>
 - Open the command prompt, navigate to application directory using cd command </br>example: <b> cd D:\workspace\GitHub\atmlocator </b>
-- Now build the application using maven <b> mvn clean install <b>,this command will execute the junit test as well if you want to skip you can run this command(not recommended)
+- Now build the application using maven <b> mvn clean install </b>,this command will execute the junit test as well if you want to skip you can run this command(not recommended)
   <b>mvn clean install -DskipTests</b>
 - Now you can the the spring boot application using below command </br>
         <b> mvn spring-boot:run </b>
