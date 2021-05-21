@@ -8,6 +8,7 @@ class AtmLocatorApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("************");
 	}
 
 }
